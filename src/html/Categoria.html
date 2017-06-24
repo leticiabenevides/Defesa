@@ -1,0 +1,80 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="http://bootswatch.com/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+<body>
+<title> Categoria </title>
+<div id="main" class="container-fluid">
+
+ <center><h1 class="page-header">Adicionar Categoria </h1>
+<form action="categoria.html">
+ <div class="row">
+
+<div class="container">
+   
+        <div class="col-sm-6">
+            <form role="form" name="formTransaction">
+                <div class="form-group">
+                    <label for="cateogira">Nome</label>
+                    <input type="text" name="categoria" class="form-control" id="categoria" ng-model="categoria"  required>
+                </div>
+                <div class="form-group">
+              
+                
+            </form>
+        </div>
+    </div>
+
+   
+            <div class="row">
+
+                <button  class="btn btn-success btn-block"  ng-click="loadCategoria()">Adicionar</button>
+ 		
+
+            </div>
+        </div>
+        <div style="padding-bottom: 10px">&nbsp;</div>
+    </div>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <div>
+         	
+        </div>
+        <div class="table-responsive">
+            <table class="table table-condensed table-striped">
+                <thead>
+                <tr>
+                    <th>Categorias</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody >
+                <tr ng-repeat="item in transacoes">
+                    <td>{{nome.cateogoria}}</td>
+                   
+                   </a> </td>
+                    <td><a class="fa fa-trash" ng-click="deleteCategoria(categoria._id)"></a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+    </div>
+  </div>
+</form>
+</center>
+
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
+
+
